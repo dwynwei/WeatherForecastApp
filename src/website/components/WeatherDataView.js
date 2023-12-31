@@ -3,7 +3,6 @@ import WaitingAnimation from "./WaitingAnimation";
 import IconLoader from "./IconLoader";
 
 function WeatherDataView({ weatherData, selectedCity }) {
-  console.log("weatherData", weatherData);
   if (!weatherData)
     return (
       <div>
