@@ -18,7 +18,6 @@ function Weather() {
   const [selectedFrequency, setSelectedFrequency] = useState(null);
   const [selectedCountry, setSelectedCountry] = useState(null);
   const prevFrequencyRef = useRef();
-  const prevCityRef = useRef();
   const prevSelectedFrequency = prevFrequencyRef.current;
   const [loading, setLoading] = useState(false);
   const weatherCastBasePath = createHttpHelperWithBaseURL(
@@ -62,7 +61,6 @@ function Weather() {
 
   useEffect(() => {
     prevFrequencyRef.current = selectedFrequency;
-    prevCityRef.current = selectedCity;
   }, []);
 
   useEffect(() => {
@@ -89,7 +87,6 @@ function Weather() {
     if (selectedCity && selectedFrequency !== null) {
       getCurrentCityWeatherCast();
     }
-    prevCityRef.current = selectedCity;
   }, [selectedCity]);
 
   useEffect(() => {
