@@ -1,6 +1,6 @@
 # WeatherApp API
 
-This is the backend service for the WeatherApp, developed using 'Java 17' and 'Spring Boot framework version 3.2.1'.
+This is the backend service for the WeatherApp, developed using `Java 17` and `Spring Boot framework version 3.2.1`.
 
 ## Configuration
 
