@@ -1,7 +1,0 @@
-weather:
-  apiKey: 80441f413f3c07edf51b46969a3ee60d
-  defaultCity: Istanbul
-  fetchInterval: MINUTELY
-  
-server:
-  port: 8080
